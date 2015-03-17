@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gumasta" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONX-gw-kTF" customClass="GPPSignInButton">
+                                <rect key="frame" x="238" y="283" width="125" height="30"/>
+                                <state key="normal" title="Login with G+">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="138" y="285" width="125" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="138" y="311" width="125" height="30"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="signInButton" destination="ONX-gw-kTF" id="zku-JG-wtP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="220"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="oGq-Er-5R8">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="PLQ-5z-Lcv" customClass="HomeViewController" customModule="Gumasta" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wu1-7y-Wyt"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wuq-Rn-q6I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dAQ-nT-MaS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Gumasta!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YW3-S2-f9f">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YW3-S2-f9f" firstAttribute="leading" secondItem="dAQ-nT-MaS" secondAttribute="leadingMargin" constant="68" id="18K-7K-P36"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YW3-S2-f9f" secondAttribute="trailing" constant="67" id="Eu8-EV-36O"/>
+                            <constraint firstItem="Wuq-Rn-q6I" firstAttribute="top" secondItem="YW3-S2-f9f" secondAttribute="bottom" constant="272" id="Ubc-FM-cUn"/>
+                            <constraint firstItem="YW3-S2-f9f" firstAttribute="leading" secondItem="dAQ-nT-MaS" secondAttribute="leadingMargin" constant="68" id="ism-IY-mMx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YW3-S2-f9f" secondAttribute="trailing" constant="67" id="tQ7-ab-7VW"/>
+                            <constraint firstItem="Wuq-Rn-q6I" firstAttribute="top" secondItem="YW3-S2-f9f" secondAttribute="bottom" constant="272" id="xAc-xW-7O8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="YW3-S2-f9f"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="18K-7K-P36"/>
+                                <exclude reference="Eu8-EV-36O"/>
+                                <exclude reference="ism-IY-mMx"/>
+                                <exclude reference="tQ7-ab-7VW"/>
+                                <exclude reference="Ubc-FM-cUn"/>
+                                <exclude reference="xAc-xW-7O8"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="YW3-S2-f9f"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="18K-7K-P36"/>
+                                <include reference="tQ7-ab-7VW"/>
+                                <include reference="xAc-xW-7O8"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Eu8-EV-36O"/>
+                                <include reference="ism-IY-mMx"/>
+                                <include reference="Ubc-FM-cUn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVj-wt-U9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="979.5" y="220"/>
+        </scene>
+    </scenes>
+</document>
